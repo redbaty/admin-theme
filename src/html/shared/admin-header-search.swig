@@ -1,6 +1,8 @@
-<form class="navbar-form navbar-left" role="search">
+<form class="form-inline navbar-form pull-left" role="search">
   <div class="form-group">
     <input type="search" class="form-control" placeholder="Search">
   </div>
-  <button type="submit" class="btn btn-default hidden">Search</button>
+  <button type="submit" class="btn btn-secondary-outline">
+    <span class="fa fa-search"></span>
+  </button>
 </form>

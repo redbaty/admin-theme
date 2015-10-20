@@ -1,10 +1,11 @@
 var config  = require('../config')
-var ghPages = require('gulp-gh-pages')
+
 var gulp    = require('gulp')
-// var open    = require('open')
-var os      = require('os')
-var package = require('../../package.json')
-var path    = require('path')
+  , os      = require('os')
+  , path    = require('path')
+  // , open    = require('open')
+  , ghPages = require('gulp-gh-pages')
+  , package = require('../../package.json')
 
 var settings = {
   url: package.homepage,
@@ -14,10 +15,10 @@ var settings = {
   }
 }
 
-gulp.task('deploy', ['build:production'], function() {
+gulp.task('deploy', ['build:production'], function () {
   return gulp.src(settings.src)
     .pipe(ghPages(settings.ghPages))
-    // .on('end', function(){
+    // .on('end', function (){
     //   open(settings.url)
     // })
 })

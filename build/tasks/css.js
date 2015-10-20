@@ -1,5 +1,5 @@
 var config       = require('../config')
-if(!config.tasks.css) return
+if (!config.tasks.css) return
 
 var gulp         = require('gulp')
 var browserSync  = require('browser-sync')

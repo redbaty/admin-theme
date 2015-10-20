@@ -1,30 +1,20 @@
-<ul class="nav navbar-nav navbar-right">
-  <li>
-    <a href="#">
-      <span class="glyphicon glyphicon-info-sign"></span>
-      <span class="sr-only">Notification</span>
-      <small class="badge">2</small>
+<ul class="nav navbar-nav pull-right">
+  <li class="nav-item dropdown">
+    <a href="#" id="user-dropdown" class="nav-link user-dropdown dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <img src="//placehold.it/180x180" alt="User Avatar" class="img-rounded img-responsive">
+      <span class="label label-pill label-danger">2</span>
     </a>
-  </li>
-  <li>
-    <a href="#">
-      <span class="glyphicon glyphicon-question-sign"></span>
-      <span class="sr-only">Help</span>
-    </a>
-  </li>
-  <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-      <span>Username</span>
-      <span class="glyphicon glyphicon-user"></span>
-    </a>
-    <ul class="dropdown-menu" role="menu">
-      <li><a href="#">Action</a></li>
-      <li><a href="#">Another action</a></li>
-      <li><a href="#">Something else here</a></li>
-      <li class="divider"></li>
-      <li><a href="#">Separated link</a></li>
-      <li class="divider"></li>
-      <li><a href="#">One more separated link</a></li>
-    </ul>
+    <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="user-dropdown">
+    {% for nav in navs.header %}
+      {% if nav.type == 'devider' %}
+        <div class="dropdown-divider"></div>
+        {% if nav.title != '' %}
+          <h6 class="dropdown-header">{{ nav.title }}</h6>
+        {% endif %}
+      {% else %}
+        <a class="dropdown-item" href="{{ nav.url }}">{{ nav.title }}</a>
+      {% endif %}
+    {% endfor %}
+    </div>
   </li>
 </ul>

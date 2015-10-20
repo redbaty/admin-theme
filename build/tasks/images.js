@@ -1,5 +1,5 @@
 var config      = require('../config')
-if(!config.tasks.images) return
+if (!config.tasks.images) return
 
 var browserSync = require('browser-sync')
 var changed     = require('gulp-changed')
@@ -12,7 +12,7 @@ var paths = {
   dest: path.join(config.root.dest, config.tasks.images.dest)
 }
 
-gulp.task('images', function() {
+gulp.task('images', function () {
   return gulp.src(paths.src)
     .pipe(changed(paths.dest)) // Ignore unchanged files
     .pipe(imagemin()) // Optimize

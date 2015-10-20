@@ -5,18 +5,6 @@
 
 {% block contents %}
   <div class="row">
-  {% for card in dashboardCards %}
-    <div class="col-lg-3">
-      <div class="card">
-        <div class="card-block">
-          <h4 class="card-title">{{ card.title }}</h4>
-          <p class="card-text text-muted">{{ card.text }}</p>
-        </div>
-      </div>
-    </div>
-  {% endfor %}
-  </div>
-  <div class="row">
   {% for cards in columns %}
     <div id="{{ loop.key }}" class="col-lg-6">
     {% for colCard in cards %}

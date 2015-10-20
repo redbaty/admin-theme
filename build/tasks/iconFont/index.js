@@ -1,5 +1,5 @@
 var config      = require('../../config')
-if(!config.tasks.iconFont) return
+if (!config.tasks.iconFont) return
 
 var gulp             = require('gulp')
 var iconfont         = require('gulp-iconfont')
@@ -30,7 +30,7 @@ var settings = {
   }
 }
 
-gulp.task('iconFont', function() {
+gulp.task('iconFont', function () {
   return gulp.src(settings.src)
     .pipe(iconfont(settings.options))
     .on('glyphs', generateIconSass(settings))

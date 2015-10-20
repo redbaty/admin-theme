@@ -17,7 +17,7 @@ var settings = {
   }
 }
 
-gulp.task('server', function() {
+gulp.task('server', function () {
   var url = 'http://localhost:' + settings.port
 
   // express()

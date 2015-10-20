@@ -1,5 +1,6 @@
-var $ = require('jquery')
+window.jQuery = window.$ = require('jquery')
+require('bootstrap')
 
-// $(document).ready(function () {
-//   alert('Hi There');
-// })
+$('a[href="#"]').click(function (e) {
+  e.preventDefault()
+})

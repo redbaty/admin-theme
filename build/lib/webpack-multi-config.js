@@ -5,13 +5,13 @@ var path            = require('path')
   , webpack         = require('webpack')
   , webpackManifest = require('./webpackManifest')
 
-module.exports = function(env) {
+module.exports = function (env) {
   var jsSrc = path.resolve(config.root.src, config.tasks.js.src)
     , jsDest = path.resolve(config.root.dest, config.tasks.js.dest)
     , bowerPath = path.resolve(config.root.bower)
     , publicPath = path.join(config.tasks.js.src, '/')
     , filenamePattern = env === 'production' ? '[name]-[hash].js' : '[name].js'
-    , extensions = config.tasks.js.extensions.map(function(extension) {
+    , extensions = config.tasks.js.extensions.map(function (extension) {
     return '.' + extension
   })
 

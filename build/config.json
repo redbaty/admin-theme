@@ -12,6 +12,12 @@
       }
     },
 
+    "copy": {
+      "src": "data",
+      "dest": "./",
+      "excludes": ["global.json"]
+    },
+
     "js": {
       "src": "scripts",
       "dest": "scripts",
@@ -40,6 +46,15 @@
       "src": "images",
       "dest": "images",
       "extensions": ["jpg", "png", "svg", "gif"]
+    },
+
+    "fonts": {
+      "src": "fonts",
+      "dest": "fonts",
+      "extensions": ["woff2", "woff", "eot", "ttf", "svg"],
+      "includePaths": [
+        "font-awesome/fonts"
+      ]
     },
 
     "html": {

@@ -3,21 +3,98 @@
     "name": "Awesome App",
     "client": "Some Company"
   },
-  "socialLinks": [
+  "dashboardCards": [
     {
-      "id": "twitter",
-      "title": "Twitter",
-      "url": "https://twitter.com/viget"
+      "title": "Card One",
+      "text": "Some text goes here"
     },
     {
-      "id": "facebook",
-      "title": "Facebook",
-      "url": "https://www.facebook.com/vigetlabs"
+      "title": "Card Two",
+      "text": "Some text goes here"
     },
     {
-      "id": "instagram",
-      "title": "Instagram",
-      "url": "https://instagram.com/viget"
+      "title": "Card Three",
+      "text": "Some text goes here"
+    },
+    {
+      "title": "Card Four",
+      "text": "Some text goes here"
     }
-  ]
+  ],
+  "columns": {
+    "col-1": [
+      {
+        "title": "Card Three",
+        "text": "Some text goes here"
+      }
+    ],
+    "col-2": [
+      {
+        "title": "Card Three",
+        "text": "Some text goes here"
+      }
+    ]
+  },
+  "navs": {
+    "header": [
+      {
+        "type": "link",
+        "title": "Your Profile",
+        "url": "#"
+      },
+      {
+        "type": "link",
+        "title": "Your Notifications",
+        "url": "#"
+      },
+      {
+        "type": "link",
+        "title": "Get Help",
+        "url": "#"
+      },
+      {
+        "type": "devider"
+      },
+      {
+        "type": "link",
+        "title": "Settings",
+        "url": "#"
+      },
+      {
+        "type": "link",
+        "title": "Logout",
+        "url": "#"
+      }
+    ],
+    "sidebar": [
+      {
+        "type": "link",
+        "icon": "dashboard",
+        "title": "Dashboard",
+        "url": "/index.html",
+        "active": true
+      },
+      {
+        "type": "link",
+        "icon": "folder-open",
+        "title": "Tables",
+        "url": "/tables.html"
+      }
+    ]
+  },
+    "sidebarNav": [
+      {
+        "type": "link",
+        "icon": "dashboard",
+        "title": "Dashboard",
+        "url": "/index.html",
+        "active": true
+      },
+      {
+        "type": "link",
+        "icon": "folder-open",
+        "title": "Tables",
+        "url": "/tables.html"
+      }
+    ]
 }

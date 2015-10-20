@@ -10,6 +10,6 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[{**.js,**.json,**.css,**.scss,**.yml,**.html,!node_modules/*,!bower_components/*}]
+[{**.js,**.json,**.css,**.scss,**.yml,**.html,**.swig,!node_modules/*,!bower_components/*}]
 indent_style = space
 indent_size = 2

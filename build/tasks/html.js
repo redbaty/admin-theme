@@ -16,7 +16,9 @@ var _            = require('lodash')
 var package = require('../../package.json')
 var exclude = path.normalize('!**/{' + config.tasks.html.excludeFolders.join(',') + '}/**')
 var extensions = config.tasks.html.extensions.join(',')
-var options = {}
+var options = {
+  defaults: { cache: false }
+}
 var paths = {
   src: [path.join(config.root.src, config.tasks.html.src, '/**/*.{' + extensions + '}'), exclude],
   dest: path.join(config.root.dest, config.tasks.html.dest),
@@ -36,14 +38,12 @@ var getData = function (file) {
   })
 }
 
-gulp.task('html', function () {
+gulp.task('html', ['copy'], function () {
   return gulp.src(paths.src)
     .pipe(data(getData))
     .pipe(swig(options))
     .on('error', handleErrors)
     .pipe(gulpif(process.env.NODE_ENV == 'production', htmlmin(config.tasks.html.htmlmin)))
     .pipe(gulp.dest(paths.dest))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
+    .on('end', browserSync.reload)
 })
