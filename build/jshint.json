@@ -1,0 +1,21 @@
+{
+  "asi" : true,
+  "node": true,
+  "validthis" : true,
+  "browser" : true,
+  "eqeqeq" : false,
+  "eqnull" : true,
+  "expr" : true,
+  "jquery" : true,
+  "latedef" : true,
+  "laxbreak" : true,
+  "strict" : true,
+  "laxcomma": true,
+  "nonbsp" : true,
+  "undef" : true,
+  "unused" : false,
+  "quotmark": "single",
+  "globals": {
+    "define": true
+  }
+}

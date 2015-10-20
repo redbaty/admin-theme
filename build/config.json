@@ -1,0 +1,56 @@
+{
+  "root": {
+    "src": "./src",
+    "dest": "./public",
+    "bower": "./bower_components"
+  },
+
+  "tasks": {
+    "browserSync": {
+      "server": {
+        "baseDir": "public"
+      }
+    },
+
+    "js": {
+      "src": "scripts",
+      "dest": "scripts",
+      "extractSharedJs": true,
+      "entries": {
+        "admin": ["./admin.js"]
+      },
+      "extensions": ["js"],
+      "modulesDirectories": ["node_modules", "bower_components"]
+    },
+
+    "css": {
+      "src": "styles",
+      "dest": "styles",
+      "autoprefixer": {
+        "browsers": ["last 3 version"]
+      },
+      "sass": {
+        "indentedSyntax": false,
+        "includePaths": ["bower_components"]
+      },
+      "extensions": ["sass", "scss", "css"]
+    },
+
+    "images": {
+      "src": "images",
+      "dest": "images",
+      "extensions": ["jpg", "png", "svg", "gif"]
+    },
+
+    "html": {
+      "src": "html",
+      "dest": "./",
+      "dataFile": "data/global.json",
+      "htmlmin": {
+        "collapseWhitespace": true
+      },
+      "extensions": ["html", "swig"],
+      "excludeFolders": ["layouts", "shared"]
+    }
+  }
+}

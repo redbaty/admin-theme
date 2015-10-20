@@ -1,0 +1,60 @@
+{
+  "name": "creasi-admin",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Yet another admin template built on top of TWBS v4-alpha",
+  "homepage": "https://github.com/feryardiant",
+  "author": "Fery Wardiyanto <hallo@feryardiant.me>",
+  "main": "dist/index.js",
+  "keywords": [
+    "admin-theme",
+    "twitter-bootstrap"
+  ],
+  "engines": {
+    "node": "0.12.2",
+    "npm": "2.7.4"
+  },
+  "license": "MIT",
+  "scripts": {
+    "deploy": "gulp deploy",
+    "production": "gulp build:production",
+    "development": "gulp",
+    "test": "echo 'tested'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.9.11",
+    "compression": "^1.6.0",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-changed": "^1.3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-csscomb": "^3.0.6",
+    "gulp-data": "^1.2.0",
+    "gulp-filter": "^3.0.1",
+    "gulp-gh-pages": "^0.5.3",
+    "gulp-htmlmin": "^1.2.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-modernizr": "0.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rev": "^6.0.1",
+    "gulp-rev-napkin": "^0.1.0",
+    "gulp-rev-replace": "^0.4.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sequence": "^0.4.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-swig": "^0.7.4",
+    "gulp-uglify": "^1.4.2",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.5",
+    "imports-loader": "^0.6.5",
+    "lodash": "^3.10.1",
+    "require-dir": "^0.3.0",
+    "vinyl-source-stream": "^1.1.0",
+    "webpack": "^1.12.2"
+  }
+}
