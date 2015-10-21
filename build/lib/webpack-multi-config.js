@@ -35,13 +35,8 @@ module.exports = function (env) {
     module: {
       noParse: [],
       loaders: [
-        // {
-        //   test: require.resolve('jquery'),
-        //   loader: 'imports?jQuery=jquery'
-        // },
         {
           test: /\.js$/,
-          // loader: 'imports-loader',
           loader: 'imports?this=>window',
           exclude: /node_modules|bower_components/
         }

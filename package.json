@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "description": "Yet another admin template built on top of TWBS v4-alpha",
-  "homepage": "https://github.com/feryardiant",
+  "homepage": "http://feryardiant.me/admin-theme/",
   "author": "Fery Wardiyanto <hallo@feryardiant.me>",
   "main": "dist/index.js",
   "keywords": [
@@ -53,6 +53,8 @@
     "gulp-watch": "^4.3.5",
     "imports-loader": "^0.6.5",
     "lodash": "^3.10.1",
+    "marked": "^0.3.5",
+    "open": "0.0.5",
     "require-dir": "^0.3.0",
     "vinyl-source-stream": "^1.1.0",
     "webpack": "^1.12.2"

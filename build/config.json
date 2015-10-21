@@ -2,6 +2,7 @@
   "root": {
     "src": "./src",
     "dest": "./public",
+    "tmp": "./_tmp",
     "bower": "./bower_components"
   },
 

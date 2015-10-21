@@ -1,11 +1,17 @@
-var gulp   = require('gulp')
-var del    = require('del')
-var config = require('../config')
-var path   = require('path')
-var gutil  = require('gulp-util')
+var config  = require('../config')
+
+var gulp    = require('gulp')
+  , os      = require('os')
+  , del     = require('del')
+  , path    = require('path')
+  , gutil   = require('gulp-util')
+  , package = require('../../package.json')
 
 gulp.task('clean', function (cb) {
-  var files = [ path.join(config.root.dest, 'rev-manifest.json') ]
+  var files = [
+    path.join(config.root.dest, 'rev-manifest.json'),
+    path.join(config.root.tmp, package.name, '/**/*')
+  ]
 
   for (var key in config.tasks) {
     var task = config.tasks[key]
