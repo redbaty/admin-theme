@@ -5,9 +5,10 @@ var gulp      = require('gulp')
   , uglify    = require('gulp-uglify')
   , path      = require('path')
 
+var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
 var paths = {
   src: path.join(config.root.src, config.tasks.js.src, '/**/*.js'),
-  dest: path.join(config.root.dest, config.tasks.js.dest)
+  dest: path.join(buildPath, config.tasks.js.dest)
 }
 
 gulp.task('modernizr', function () {

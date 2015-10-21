@@ -5,6 +5,7 @@ Desktop.ini
 .directory
 *.old
 *.log
+*.cache
 *.lock
 
 # IDE Specifics
@@ -14,8 +15,7 @@ Desktop.ini
 # Dependencies Folder
 node_modules/
 bower_components/
-public/
-_tmp/
+dist/
 
 # but leave there Application Specifics
 !.gitkeep

@@ -9,9 +9,10 @@ var handleErrors = require('../lib/handleErrors')
 var autoprefixer = require('gulp-autoprefixer')
 var path         = require('path')
 
+var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
 var paths = {
   src: path.join(config.root.src, config.tasks.css.src, '/**/*.{' + config.tasks.css.extensions.join(',') + '}'),
-  dest: path.join(config.root.dest, config.tasks.css.dest)
+  dest: path.join(buildPath, config.tasks.css.dest)
 }
 
 gulp.task('css', function () {

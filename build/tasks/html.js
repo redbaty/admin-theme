@@ -19,9 +19,10 @@ var extensions = config.tasks.html.extensions.join(',')
 var options = {
   defaults: { cache: false }
 }
+var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
 var paths = {
   src: [path.join(config.root.src, config.tasks.html.src, '/**/*.{' + extensions + '}'), exclude],
-  dest: path.join(config.root.dest, config.tasks.html.dest),
+  dest: path.join(buildPath, config.tasks.html.dest),
 }
 
 var getData = function (file) {

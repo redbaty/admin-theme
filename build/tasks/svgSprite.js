@@ -8,10 +8,10 @@ var svgstore    = require('gulp-svgstore')
 var path        = require('path')
 
 gulp.task('svgSprite', function () {
-
+  var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
   var settings = {
     src: path.join(config.root.src, config.tasks.svgSprite.src, '/*.svg'),
-    dest: path.join(config.root.dest, config.tasks.svgSprite.dest)
+    dest: path.join(buildPath, config.tasks.svgSprite.dest)
   }
 
   return gulp.src(settings.src)

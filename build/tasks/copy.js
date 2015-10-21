@@ -7,9 +7,10 @@ var gulp         = require('gulp')
   , browserSync  = require('browser-sync')
   , handleErrors = require('../lib/handleErrors')
 
+var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
 var paths = {
   src: [path.join(config.root.src, config.tasks.copy.src, '/**')],
-  dest: path.join(config.root.dest, config.tasks.copy.dest)
+  dest: path.join(buildPath, config.tasks.copy.dest)
 }
 
 config.tasks.copy.excludes.forEach(function (exclude) {

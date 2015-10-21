@@ -6,8 +6,9 @@ var path            = require('path')
   , webpackManifest = require('./webpackManifest')
 
 module.exports = function (env) {
+  var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
   var jsSrc = path.resolve(config.root.src, config.tasks.js.src)
-    , jsDest = path.resolve(config.root.dest, config.tasks.js.dest)
+    , jsDest = path.resolve(buildPath, config.tasks.js.dest)
     , bowerPath = path.resolve(config.root.bower)
     , publicPath = path.join(config.tasks.js.src, '/')
     , filenamePattern = env === 'production' ? '[name]-[hash].js' : '[name].js'

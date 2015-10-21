@@ -1,15 +1,17 @@
 {
   "root": {
     "src": "./src",
-    "dest": "./public",
+    "dest": "./dist",
     "tmp": "./_tmp",
+    "build": "./_.cache/build",
+    "deploy": "./_.cache/deploy",
     "bower": "./bower_components"
   },
 
   "tasks": {
     "browserSync": {
       "server": {
-        "baseDir": "public"
+        "baseDir": "dist"
       }
     },
 

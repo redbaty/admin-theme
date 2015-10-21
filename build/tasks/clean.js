@@ -8,16 +8,19 @@ var gulp    = require('gulp')
   , package = require('../../package.json')
 
 gulp.task('clean', function (cb) {
+  var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
+  var extras = '/.{editorconfig,gitignore,nojekyll}'
   var files = [
-    path.join(config.root.dest, 'rev-manifest.json'),
-    path.join(config.root.tmp, package.name, '/**/*')
+    path.join(config.root.deploy, '/**/*'),
+    path.join(buildPath, 'rev-manifest.json'),
+    path.join(buildPath, extras)
   ]
 
   for (var key in config.tasks) {
     var task = config.tasks[key]
     if (task.dest) {
       var glob = '**/*' + (task.extensions ? ('.{' + task.extensions.join(',') + ',map}') : '')
-      files.push(path.join(config.root.dest, task.dest, glob))
+      files.push(path.join(buildPath, task.dest, glob))
     }
   }
 
@@ -26,7 +29,6 @@ gulp.task('clean', function (cb) {
   files.push('!' + path.join(config.root.src, '/**/*'))
 
   del(files).then(function (paths) {
-    // console.log(paths)
     cb()
   })
 })

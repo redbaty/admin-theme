@@ -8,9 +8,10 @@ var gulp         = require('gulp')
   , handleErrors = require('../lib/handleErrors')
 
 var pattern = '/**.{' + config.tasks.fonts.extensions.join(',') + '}'
+var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
 var paths = {
   src: [path.join(config.root.src, config.tasks.fonts.src, pattern)],
-  dest: path.join(config.root.dest, config.tasks.fonts.dest)
+  dest: path.join(buildPath, config.tasks.fonts.dest)
 }
 
 config.tasks.fonts.includePaths.forEach(function (includePath) {

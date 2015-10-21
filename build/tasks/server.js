@@ -7,8 +7,9 @@ var gutil    = require('gulp-util')
 // var open     = require('open')
 var path     = require('path')
 
+var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
 var settings = {
-  root: path.resolve(process.cwd(), config.root.dest),
+  root: path.resolve(process.cwd(), buildPath),
   port: process.env.PORT || 5000,
   logLevel: process.env.NODE_ENV ? 'combined' : 'dev',
   staticOptions: {

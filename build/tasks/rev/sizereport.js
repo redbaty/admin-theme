@@ -5,9 +5,10 @@ var repeatString = require('../../lib/repeatString')
 
 // 6) Report sizes
 gulp.task('size-report', function () {
+  var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
   var hashedFiles = '/**/*-' + repeatString('[a-z,0-9]', 8)  + '*.*'
 
-  return gulp.src([config.root.dest + hashedFiles, '*!rev-manifest.json'])
+  return gulp.src([buildPath + hashedFiles, '*!rev-manifest.json'])
     // .pipe(sizereport({
     //     gzip: true
     // }))

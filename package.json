@@ -16,9 +16,10 @@
   },
   "license": "MIT",
   "scripts": {
-    "deploy": "gulp deploy",
-    "production": "gulp build:production",
-    "development": "gulp",
+    "deploy": "NODE_ENV=production gulp deploy",
+    "production": "NODE_ENV=production gulp build:production",
+    "development": "NODE_ENV=development gulp build:development",
+    "gulp": "NODE_ENV=development gulp",
     "test": "echo 'tested'"
   },
   "dependencies": {},
