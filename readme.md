@@ -1,6 +1,6 @@
 # Simple Admin Theme
 
-This repo is heavily based on awesome [Gulp Starter](https://github.com/vigetlabs/gulp-starter) repository by [Viget Labs](https://github.com/vigetlabs)
+This repo is fork from awesome [Gulp Starter](https://github.com/vigetlabs/gulp-starter) by [Viget Labs](https://github.com/vigetlabs) with some additional modifications.
 
 I've planned to use it as my main admin template for my next personal projects and it should be distributed on [NPM](https://www.npmjs.com/), [Bower](http://bower.io/) and [Packagist](https://packagist.org/), but wait until it ready.
 
