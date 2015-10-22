@@ -1,103 +1,16 @@
-@import 'bootstrap/scss/variables.scss';
-@import 'bootstrap/scss/mixins.scss';
 @import 'variables';
 
-body {
-  // Make the `body` use the `font-size-root`
-  font-family: $font-family-base;
-  height: 100%;
-  padding-top: $navbar-height;
-  margin-bottom: $footer-height;
-}
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
 
-#header {
-  //
-}
+@import 'vendors/twbs_reboot';
+@import 'vendors/twbs_navbar';
+@import 'vendors/twbs_navs';
+@import 'vendors/twbs_card';
 
-.navbar-nav .user-dropdown {
-  padding: 0;
-  height: $navbar-inner-height;
-
-  img {
-    max-height: $navbar-inner-height;
-  }
-
-  .label {
-    position: absolute;
-    bottom: 0;
-    left: -10px;
-  }
-}
-
-#sidebar {
-  position: fixed;
-  top: $navbar-height;
-  bottom: $footer-height;
-  width: $sidebar-width;
-  background: $sidebar-bg;
-  border-right: $content-border-base;
-  padding: $navbar-padding-horizontal 0;
-  overflow-y: auto;
-  z-index: $zindex-navbar-fixed;
-}
-
-.nav-pills .nav-link {
-  border-radius: 0;
-  // padding: 0.3em 1em;
-  line-height: 1.2em;
-  color: $body-color;
-
-  &.active,
-  &.open .nav-link {
-    @include plain-hover-focus {
-      color: $body-color;
-      background-color: lighten($gray-light, 35%);
-    }
-  }
-}
+@import 'components/header';
+@import 'components/sidebar';
+@import 'components/contents';
+@import 'components/footer';
 
 
-#contents {
-  height: 100%;
-  width: 100%;
-  padding-left: $sidebar-width;
-}
-
-#inner-contents {
-  padding: $spacer-y ($spacer-y * 2);
-}
-
-#page-heading {
-  border-bottom: $content-border-base;
-  padding-bottom: $spacer-y;
-  margin-bottom: $spacer-y;
-  font-size: 2rem;
-}
-
-#footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  border-top: $content-border-base;
-  height: $footer-height;
-  z-index: $zindex-navbar-fixed;
-  background-color: $body-bg;
-
-  p {
-    margin: 0;
-    line-height: ($footer-height - 1);
-    font-weight: 700;
-    font-size: 14px;
-    color: $text-muted;
-  }
-
-  .copyright {
-    float: left;
-    text-align: left;
-  }
-
-  .appname {
-    float: right;
-    text-align: right;
-  }
-}

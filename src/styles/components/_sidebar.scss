@@ -1,0 +1,31 @@
+#sidebar {
+  position: fixed;
+  top: ($navbar-height + 1);
+  bottom: $footer-height;
+  width: $sidebar-width;
+  background: $sidebar-bg;
+  border-right: $content-border-base;
+  padding: ($spacer-y * 1.5) 0;
+  overflow-y: auto;
+  z-index: $zindex-navbar-fixed;
+}
+
+.nav-link {
+  @include clearfix;
+}
+
+.link-icon {
+  float: left;
+}
+
+.link-badge {
+  float: right;
+}
+
+.link-text {
+  float: left;
+  margin-left: 1rem;
+  max-width: 135px;
+  display: block;
+  @include text-truncate;
+}

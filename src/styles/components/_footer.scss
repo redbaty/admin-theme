@@ -1,0 +1,27 @@
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: $content-border-base;
+  height: $footer-height;
+  z-index: $zindex-navbar-fixed;
+  background-color: $body-bg;
+
+  p {
+    margin: 0;
+    line-height: ($footer-height - 1);
+    font-weight: 700;
+    font-size: 12px;
+    color: $text-muted;
+  }
+
+  .copyright {
+    float: left;
+    text-align: left;
+  }
+
+  .appname {
+    float: right;
+    text-align: right;
+  }
+}

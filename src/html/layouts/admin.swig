@@ -5,12 +5,14 @@
 {% endblock %}
 
 {% block body %}
+  <header class="navbar navbar-light navbar-fixed-top">
   {% include "../shared/admin-header.swig" %}
+  </header>
+
   {% include "../shared/admin-sidebar.swig" %}
 
   <main id="contents">
     <div id="inner-contents">
-      <h1 id="page-heading">{% block title %}Home{% endblock %}<small class="text-muted"> > {% block subtitle %}Overview{% endblock %}</small></h1>
       {% block contents %}{% endblock %}
     </div>
   </main>

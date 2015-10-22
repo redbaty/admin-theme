@@ -88,12 +88,75 @@
         "icon": "dashboard",
         "title": "Dashboard",
         "url": "/index.html",
+        "notif": 2,
         "active": true
       },
       {
         "type": "link",
+        "icon": "bar-chart",
+        "title": "Reports",
+        "url": "/tables.html"
+      },
+      {
+        "type": "link",
+        "icon": "briefcase",
+        "title": "Data",
+        "url": "/tables.html",
+        "notif": 2
+      },
+      {
+        "type": "link",
         "icon": "folder-open",
-        "title": "Tables",
+        "title": "Files",
+        "url": "/tables.html"
+      },
+      {
+        "type": "link",
+        "icon": "calendar",
+        "title": "Calendar",
+        "url": "/tables.html"
+      },
+      {
+        "type": "link",
+        "icon": "book",
+        "title": "Contacts",
+        "url": "/tables.html"
+      },
+      {
+        "type": "link",
+        "icon": "group",
+        "title": "Users",
+        "url": "/tables.html"
+      },
+      {
+        "type": "link",
+        "icon": "bell",
+        "title": "Notifications",
+        "url": "/tables.html",
+        "notif": 4
+      },
+      {
+        "type": "link",
+        "icon": "history",
+        "title": "History",
+        "url": "/tables.html"
+      },
+      {
+        "type": "link",
+        "icon": "cubes",
+        "title": "Utilities",
+        "url": "/tables.html"
+      },
+      {
+        "type": "link",
+        "icon": "gears",
+        "title": "Settings",
+        "url": "/tables.html"
+      },
+      {
+        "type": "link",
+        "icon": "question-circle",
+        "title": "Help",
         "url": "/tables.html"
       }
     ]

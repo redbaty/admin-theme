@@ -3,6 +3,7 @@
     "src": "./src",
     "dest": "./dist",
     "tmp": "./_tmp",
+    "test": "./test",
     "build": "./_.cache/build",
     "deploy": "./_.cache/deploy",
     "bower": "./bower_components"

@@ -1,0 +1,19 @@
+.nav-pills .nav-link {
+  border-radius: 0;
+  // padding: 0.3em 1em;
+  line-height: 1.2em;
+  color: $body-color;
+  
+  @include hover-focus {
+    color: $body-color;
+    background-color: $content-bg-darker;
+  }
+
+  &.active,
+  &.open .nav-link {
+    @include plain-hover-focus {
+      color: $body-color;
+      background-color: $content-bg-darker;
+    }
+  }
+}

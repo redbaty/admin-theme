@@ -1,0 +1,16 @@
+#contents {
+  height: 100%;
+  width: 100%;
+  padding-left: $sidebar-width;
+}
+
+#inner-contents {
+  padding: ($spacer-y * 1.5);
+}
+
+#page-heading {
+  border-bottom: $content-border-base;
+  padding-bottom: $spacer-y;
+  margin-bottom: $spacer-y;
+  font-size: 2rem;
+}
