@@ -18,6 +18,7 @@ $content-bg-darker:      darken($content-bg, 4%);
 $breadcrumb-bg:   $content-bg;
 
 $navbar-height: 48px;
+$navbar-height-xs: 79px;
 $navbar-inner-height: (1.5rem + (.425rem * 2));
 
 $card-spacer-x:            1.25rem;
@@ -28,7 +29,8 @@ $card-border-color:        $content-border-color;
 $card-border-radius-inner: ($card-border-radius - $card-border-width);
 $card-cap-bg:              $content-bg;
 
-$sidebar-width:   230px;
-$sidebar-bg:      $content-bg;
+$sidebar-width:      230px;
+$sidebar-width-sm:   72px;
+$sidebar-bg:         $content-bg;
 
 $footer-height: 30px;

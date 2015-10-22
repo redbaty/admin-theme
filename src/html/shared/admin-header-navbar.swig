@@ -8,7 +8,7 @@
     {% for nav in navs.header %}
       {% if nav.type == 'devider' %}
         <div class="dropdown-divider"></div>
-        {% if nav.title != '' %}
+        {% if nav.title %}
           <h6 class="dropdown-header">{{ nav.title }}</h6>
         {% endif %}
       {% else %}

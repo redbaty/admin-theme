@@ -1,31 +1,98 @@
 #sidebar {
   position: fixed;
-  top: ($navbar-height + 1);
-  bottom: $footer-height;
-  width: $sidebar-width;
+  top: $navbar-height-xs;
+  bottom: 0;
   background: $sidebar-bg;
   border-right: $content-border-base;
   padding: ($spacer-y * 1.5) 0;
   overflow-y: auto;
   z-index: $zindex-navbar-fixed;
+  transition: all .15s ease-in-out;
+  width: 0;
+
+  @include media-breakpoint-up(sm) {
+    width: $sidebar-width-sm !important;
+    top: ($navbar-height + 1);
+    bottom: $footer-height;
+  }
+
+  @include media-breakpoint-up(md) {
+    width: $sidebar-width !important;
+  }
+
+  > nav {
+    width: 100%;
+  }
+
+  &.in {
+    width: $sidebar-width;
+  }
+
+  &,
+  &.in {
+    @include media-breakpoint-only(sm) {
+      width: $sidebar-width-sm;
+    }
+  }
 }
 
-.nav-link {
+.width.collapsing {
+  height: auto;
+  overflow-x: hidden;
+  transition-property: width;
+  width: $sidebar-width;
+
+  > nav {
+    min-width: ($sidebar-width - 1);
+  }
+
+  @include media-breakpoint-up(sm) {
+    width: $sidebar-width;
+  }
+}
+
+.nav-pills .nav-link {
   @include clearfix;
+  position: relative;
+
+  @include media-breakpoint-only(sm) {
+    padding: 1em;
+  }
 }
 
 .link-icon {
   float: left;
+  font-size: inherit;
+
+  @include media-breakpoint-only(sm) {
+    font-size: 22px;
+  }
 }
 
 .link-badge {
   float: right;
+  position: relative;
+
+  @include media-breakpoint-only(sm) {
+    float: none;
+    position: absolute;
+    bottom: 0.5em;
+    right: 1em;
+  }
 }
 
 .link-text {
   float: left;
   margin-left: 1rem;
   max-width: 135px;
-  display: block;
   @include text-truncate;
+  display: block;
+
+  @include media-breakpoint-up(sm) {
+    display: none;
+  }
+
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
 }

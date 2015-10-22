@@ -4,14 +4,14 @@
   <span class="text">{{ app.name }}</span>
 </a>
 
+<button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#sidebar">
+  <span class="sr-only">Toggle navigation</span>
+  <span class="fa fa-bars" aria-hidden="true"></span>
+</button>
+
+{% include "admin-header-navbar.swig" %}
+
 <ol class="breadcrumb">
   <li><a href="#">{% block title %}Home{% endblock %}</a></li>
   <li class="active">{% block subtitle %}Overview{% endblock %}</li>
 </ol>
-
-{% include "admin-header-navbar.swig" %}
-
-<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-  <span class="sr-only">Toggle navigation</span>
-  <span class="fa fa-bars" aria-hidden="true"></span>
-</button>

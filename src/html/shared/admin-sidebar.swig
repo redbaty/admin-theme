@@ -1,4 +1,4 @@
-<aside id="sidebar">
+<aside id="sidebar" class="collapse width navbar-toggleable-xs">
   <nav>
     <ul class="nav nav-pills nav-stacked" role="navigation">
     {% for nav in sidebarNav %}

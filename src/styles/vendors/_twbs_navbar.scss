@@ -1,5 +1,7 @@
 
 .navbar {
+  transition: all .15s ease-in-out;
+
   &-fixed-top,
   &-sticky-top {
     border-bottom: $border-width solid darken($content-border-color, 5%);
@@ -12,8 +14,16 @@
 
   .breadcrumb {
     float: left;
-    margin: 0;
-    padding: .4rem 1rem;
+    margin: 2px 0 0;
+    padding: .4rem 1rem .3rem;
+    transition: all .15s ease-in-out;
+
+    @include media-breakpoint-only(xs) {
+      margin-top: .5rem;
+      width: 100%;
+      font-size: 12px;
+      padding: .2rem 1rem;
+    }
   }
 }
 
@@ -30,6 +40,15 @@
     bottom: 0;
     left: -10px;
   }
+}
+
+.navbar-toggler {
+  font-size: 1.5rem;
+  border-width: 0;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  margin-right: -.5rem;
+  margin-left: .5rem;
 }
 
 .navbar-light {

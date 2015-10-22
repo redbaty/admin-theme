@@ -7,6 +7,10 @@
   z-index: $zindex-navbar-fixed;
   background-color: $body-bg;
 
+  @include media-breakpoint-only(xs) {
+    position: relative;
+  }
+
   p {
     margin: 0;
     line-height: ($footer-height - 1);
