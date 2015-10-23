@@ -16,24 +16,25 @@ var _            = require('lodash')
 var package = require('../../package.json')
 var exclude = path.normalize('!**/{' + config.tasks.html.excludeFolders.join(',') + '}/**')
 var extensions = config.tasks.html.extensions.join(',')
+var isProduction = process.env.NODE_ENV === 'production'
 var options = {
   defaults: { cache: false }
 }
-var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
+var buildPath = isProduction ? config.root.dest : config.root.build
 var paths = {
   src: [path.join(config.root.src, config.tasks.html.src, '/**/*.{' + extensions + '}'), exclude],
   dest: path.join(buildPath, config.tasks.html.dest),
 }
 
 var getData = function (file) {
-  console.log(file)
   var dataPath = path.resolve(config.root.src, config.tasks.html.dataFile)
     , dataJson = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
+
   return _.merge(dataJson, {
     app: {
       version: package.version,
       description: package.description,
-      homepage: package.homepage,
+      url: isProduction ? package.homepage : config.root.url,
       license: package.license
     }
   })

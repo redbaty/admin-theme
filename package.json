@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "description": "Yet another admin template built on top of TWBS v4-alpha",
-  "homepage": "http://feryardiant.me/admin-theme/",
+  "homepage": "http://feryardiant.me/admin-theme",
   "author": "Fery Wardiyanto <hallo@feryardiant.me>",
   "main": "dist/index.js",
   "keywords": [

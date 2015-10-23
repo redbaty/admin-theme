@@ -1,7 +1,7 @@
 {% extends 'base.swig' %}
 
 {% block head %}
-  <link rel="stylesheet" href="styles/admin.css">
+  <link rel="stylesheet" href="{{ app.url }}/styles/admin.css">
 {% endblock %}
 
 {% block body %}
@@ -26,5 +26,5 @@
 {% endblock %}
 
 {% block javascript %}
-  <script src="scripts/admin.js"></script>
+  <script src="{{ app.url }}/scripts/admin.js"></script>
 {% endblock %}

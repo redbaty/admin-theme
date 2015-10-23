@@ -9,13 +9,13 @@
   </title>
   <meta name="description" content="{{ app.name }}">
   {% include "../shared/favicons.swig" %}
-  <link rel="stylesheet" href="styles/vendors.css">
+  <link rel="stylesheet" href="{{ app.url }}/styles/vendors.css">
   {% block head %}{% endblock %}
 </head>
 <body>
   {% block body %}{% endblock %}
 
-  <script src="scripts/vendors.js"></script>
+  <script src="{{ app.url }}/scripts/vendors.js"></script>
   {% block javascript %}{% endblock %}
 </body>
 </html>

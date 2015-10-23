@@ -12,7 +12,7 @@
           <h6 class="dropdown-header">{{ nav.title }}</h6>
         {% endif %}
       {% else %}
-        <a class="dropdown-item" href="{{ nav.url }}">{{ nav.title }}</a>
+        <a class="dropdown-item" href="{{ app.url }}{{ nav.url }}">{{ nav.title }}</a>
       {% endif %}
     {% endfor %}
     </div>

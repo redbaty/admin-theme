@@ -1,5 +1,5 @@
 
-<a class="navbar-brand" href="/">
+<a class="navbar-brand" href="{{ app.url }}/">
   <span class="fa fa-hand-peace-o" aria-hidden="true"></span>
   <span class="text">{{ app.name }}</span>
 </a>

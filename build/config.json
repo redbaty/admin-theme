@@ -6,7 +6,8 @@
     "test": "./test",
     "build": "./_.cache/build",
     "deploy": "./_.cache/deploy",
-    "bower": "./bower_components"
+    "bower": "./bower_components",
+    "url": "http://localhost:3000"
   },
 
   "tasks": {
