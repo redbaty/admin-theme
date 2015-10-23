@@ -7,6 +7,11 @@
 {% block body %}
   <header class="navbar navbar-light navbar-fixed-top">
   {% include "../shared/admin-header.swig" %}
+
+  <ol class="breadcrumb">
+    <li><a href="#">{% block title %}Home{% endblock %}</a></li>
+    <li class="active">{% block subtitle %}Overview{% endblock %}</li>
+  </ol>
   </header>
 
   {% include "../shared/admin-sidebar.swig" %}

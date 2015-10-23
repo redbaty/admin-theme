@@ -10,8 +10,3 @@
 </button>
 
 {% include "admin-header-navbar.swig" %}
-
-<ol class="breadcrumb">
-  <li><a href="#">{% block title %}Home{% endblock %}</a></li>
-  <li class="active">{% block subtitle %}Overview{% endblock %}</li>
-</ol>

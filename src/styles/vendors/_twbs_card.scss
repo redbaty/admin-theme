@@ -1,5 +1,14 @@
 .card {
   margin-bottom: $spacer-y;
+
+  > .table {
+    margin-bottom: 0;
+
+    thead th,
+    thead td {
+      border-top: 0;
+    }
+  }
 }
 
 .card-block {

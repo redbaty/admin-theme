@@ -1,0 +1,14 @@
+#data-toolbar {
+  margin-bottom: $spacer-y;
+}
+
+.data-nav-heading,
+.data-nav-menu {
+  margin-bottom: $spacer-y;
+}
+
+.data-nav-heading {
+  color: $text-muted;
+  text-transform: uppercase;
+  font-size: .8rem;
+}

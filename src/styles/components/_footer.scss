@@ -4,7 +4,7 @@
   width: 100%;
   border-top: $content-border-base;
   height: $footer-height;
-  z-index: $zindex-navbar-fixed;
+  z-index: $zindex-navbar;
   background-color: $body-bg;
 
   @include media-breakpoint-only(xs) {

@@ -1,6 +1,6 @@
 {% extends 'layouts/admin.swig' %}
 
-{% block title %}Dashboard{% endblock %}
+{% block title %}Calendar{% endblock %}
 {% block subtitle %}Overview{% endblock %}
 
 {% block contents %}

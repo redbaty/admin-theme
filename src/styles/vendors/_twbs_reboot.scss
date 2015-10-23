@@ -6,6 +6,7 @@ body {
   margin-bottom: $footer-height;
 
   @include media-breakpoint-only(xs) {
+    padding-top: $navbar-height-xs;
     margin-bottom: 0;
   }
 }
