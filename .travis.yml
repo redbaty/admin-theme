@@ -11,4 +11,4 @@ before_script:
 after_script:
   - if [[ $AUTHOR_NAME != '' ]]; then git config --global user.name $AUTHOR_NAME; fi
   - if [[ $AUTHOR_EMAIL != '' ]]; then git config --global user.name $AUTHOR_EMAIL; fi
-  - then npm run deploy
+  - npm run deploy
