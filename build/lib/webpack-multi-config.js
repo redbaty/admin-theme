@@ -7,7 +7,7 @@ var path            = require('path')
 
 module.exports = function (env) {
   var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
-  var jsSrc = path.resolve(config.root.src, config.tasks.js.src)
+    , jsSrc = path.resolve(config.root.src, config.tasks.js.src)
     , jsDest = path.resolve(buildPath, config.tasks.js.dest)
     , bowerPath = path.resolve(config.root.bower)
     , publicPath = path.join(config.tasks.js.src, '/')

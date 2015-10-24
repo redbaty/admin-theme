@@ -1,11 +1,10 @@
 var config = require('../config')
 
 var path = require('path')
-var karmaWebpack = require('karma-webpack')
-var webpackConfig = require('./webpack-multi-config')
+  , karmaWebpack = require('karma-webpack')
+  , webpackConfig = require('./webpack-multi-config')
 
 var testSrc = path.join(config.root.test)
-
 var karmaConfig = {
   frameworks: ['mocha', 'sinon-chai'],
   files: [testSrc],

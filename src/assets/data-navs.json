@@ -1,0 +1,72 @@
+{
+  "header": [
+    {
+      "type": "link",
+      "title": "Your Profile",
+      "url": "#"
+    },
+    {
+      "type": "link",
+      "title": "Your Notifications",
+      "url": "#"
+    },
+    {
+      "type": "link",
+      "title": "Get Help",
+      "url": "#"
+    },
+    {
+      "type": "devider"
+    },
+    {
+      "type": "link",
+      "title": "Settings",
+      "url": "#"
+    },
+    {
+      "type": "link",
+      "title": "Logout",
+      "url": "#"
+    }
+  ],
+  "sidebar": [
+    {
+      "type": "link",
+      "icon": "dashboard",
+      "title": "Dashboard",
+      "url": "/index.html",
+      "notif": 2
+    },
+    {
+      "type": "link",
+      "icon": "folder-open",
+      "title": "Data",
+      "url": "/data.html",
+      "notif": 2
+    },
+    {
+      "type": "link",
+      "icon": "book",
+      "title": "Contacts",
+      "url": "/contacts.html"
+    },
+    {
+      "type": "link",
+      "icon": "calendar",
+      "title": "Calendar",
+      "url": "/calendar.html"
+    },
+    {
+      "type": "link",
+      "icon": "cubes",
+      "title": "Form Layouts",
+      "url": "/forms.html"
+    },
+    {
+      "type": "link",
+      "icon": "question-circle",
+      "title": "Help",
+      "url": "/help.html"
+    }
+  ]
+}

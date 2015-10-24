@@ -4,6 +4,7 @@
     "dest": "./dist",
     "tmp": "./_tmp",
     "test": "./test",
+    "assets": "./src/assets",
     "build": "./_.cache/build",
     "deploy": "./_.cache/deploy",
     "bower": "./bower_components",
@@ -18,9 +19,9 @@
     },
 
     "copy": {
-      "src": "data",
+      "src": "assets",
       "dest": "./",
-      "excludes": ["global.json"]
+      "excludes": ["data-*.json"]
     },
 
     "js": {
@@ -65,7 +66,8 @@
     "html": {
       "src": "html",
       "dest": "./",
-      "dataFile": "data/global.json",
+      "dataFile": "data-app.json",
+      "dataIncludes": "data-*.json",
       "htmlmin": {
         "collapseWhitespace": true
       },

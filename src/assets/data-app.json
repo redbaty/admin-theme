@@ -1,0 +1,38 @@
+{
+  "app": {
+    "name": "Awesome App",
+    "client": "Some Company"
+  },
+  "dashboardCards": [
+    {
+      "title": "Card One",
+      "text": "Some text goes here"
+    },
+    {
+      "title": "Card Two",
+      "text": "Some text goes here"
+    },
+    {
+      "title": "Card Three",
+      "text": "Some text goes here"
+    },
+    {
+      "title": "Card Four",
+      "text": "Some text goes here"
+    }
+  ],
+  "columns": {
+    "col-1": [
+      {
+        "title": "Card Three",
+        "text": "Some text goes here"
+      }
+    ],
+    "col-2": [
+      {
+        "title": "Card Three",
+        "text": "Some text goes here"
+      }
+    ]
+  }
+}
