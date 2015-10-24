@@ -11,15 +11,23 @@ var settings = {
   url: package.homepage,
   src: path.join(buildPath, '/**/*'),
   ghPages: {
-    cacheDir: path.join(config.root.deploy),
-    push: true
+    cacheDir: path.join(config.root.deploy)
   }
+}
+
+if (process.env.GH_REPO_TOKEN && process.env.TRAVIS_REPO_SLUG) {
+  settings.ghPages.remoteUrl = [
+    'https://',
+    process.env.GH_REPO_TOKEN,
+    ':@github.com/',
+    process.env.TRAVIS_REPO_SLUG
+    ].join('')
 }
 
 gulp.task('deploy', ['build:production'], function () {
   return gulp.src(settings.src)
     .pipe(ghPages(settings.ghPages))
-    // .on('end', function (){
-    //   open(settings.url)
+    // .on('end', function () {
+    //   if (!process.env.TRAVIS) open(settings.url)
     // })
 })
