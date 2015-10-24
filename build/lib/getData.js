@@ -55,7 +55,7 @@ module.exports = function (file) {
     var activeNav = '/' + file.relative.replace('swig', 'html')
     if (sideNav.url === activeNav) {
       dataJson.navs.sidebar[i].active = true
-      console.log(dataJson.navs.sidebar[i])
+      // console.log(dataJson.navs.sidebar[i])
     }
   })
 

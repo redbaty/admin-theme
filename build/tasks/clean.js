@@ -9,11 +9,11 @@ var gulp    = require('gulp')
 
 gulp.task('clean', function (cb) {
   var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
-  var extras = '/.{editorconfig,gitignore,nojekyll}'
   var files = [
-    path.join(config.root.deploy, '/**/*'),
+    config.root.deploy,
+    // path.join(config.root.deploy, '/**/*'),
     path.join(buildPath, 'rev-manifest.json'),
-    path.join(buildPath, extras)
+    path.join(buildPath, '/.{editorconfig,gitignore,nojekyll}')
   ]
 
   for (var key in config.tasks) {

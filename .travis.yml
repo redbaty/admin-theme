@@ -7,7 +7,8 @@ before_script:
   # http://docs.travis-ci.com/user/gui-and-headless-browsers/#Using-xvfb-to-Run-Tests-That-Require-GUI-(e.g.-a-Web-browser)
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
+  - npm -g update
 after_script:
   - if [[ $AUTHOR_NAME != '' ]]; then git config --global user.name $AUTHOR_NAME; fi
   - if [[ $AUTHOR_EMAIL != '' ]]; then git config --global user.name $AUTHOR_EMAIL; fi
-  - if [[ $GH_REPO_TOKEN != '' ]]; then npm run deploy; fi
+  - then npm run deploy
