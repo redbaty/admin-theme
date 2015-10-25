@@ -29,5 +29,8 @@
     "jquery-validation": "~1.14.0",
     "noty": "~2.3.7",
     "selectize": "~0.12.1"
+  },
+  "resolutions": {
+    "bootstrap": "twbs/bootstrap#v4-dev"
   }
 }
