@@ -1,6 +1,7 @@
 var config       = require('../../config')
+
 var gulp         = require('gulp')
-var repeatString = require('../../lib/repeatString')
+  , repeatString = require('../../lib/repeatString')
 // var sizereport   = require('gulp-sizereport')
 
 // 6) Report sizes

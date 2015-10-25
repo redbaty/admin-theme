@@ -1,12 +1,12 @@
-var config      = require('../../config')
+var config = require('../../config')
 if (!config.tasks.iconFont) return
 
-var gulp             = require('gulp')
+var path             = require('path')
+  , gulp             = require('gulp')
   , iconfont         = require('gulp-iconfont')
   , generateIconSass = require('./generateIconSass')
   , handleErrors     = require('../../lib/handleErrors')
   , package          = require('../../../package.json')
-  , path             = require('path')
 
 var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
   , fontPath = path.join(buildPath, config.tasks.iconFont.dest)

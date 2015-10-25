@@ -1,8 +1,8 @@
 var gulp         = require('gulp')
 // var render       = require('gulp-nunjucks-render')
 var rename       = require('gulp-rename')
-var handleErrors = require('../../lib/handleErrors')
 var gutil        = require('gulp-util')
+var handleErrors = require('../../lib/handleErrors')
 
 module.exports = function (config) {
   return function (glyphs, options) {

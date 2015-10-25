@@ -1,11 +1,11 @@
-var config      = require('../config')
+var config = require('../config')
 if (!config.tasks.svgSprite) return
 
-var browserSync = require('browser-sync')
-var gulp        = require('gulp')
-var imagemin    = require('gulp-imagemin')
-var svgstore    = require('gulp-svgstore')
 var path        = require('path')
+  , gulp        = require('gulp')
+  , imagemin    = require('gulp-imagemin')
+  , svgstore    = require('gulp-svgstore')
+  , browserSync = require('browser-sync')
 
 gulp.task('svgSprite', function () {
   var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build

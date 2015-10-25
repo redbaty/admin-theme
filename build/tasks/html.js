@@ -1,8 +1,8 @@
-var config       = require('../config')
+var config = require('../config')
 if (!config.tasks.html) return
 
-var gulp         = require('gulp')
-  , path         = require('path')
+var path         = require('path')
+  , gulp         = require('gulp')
   , gulpif       = require('gulp-if')
   , data         = require('gulp-data')
   , swig         = require('gulp-swig')

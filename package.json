@@ -26,6 +26,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "arr-flatten": "^1.0.1",
     "bower": "^1.6.5",
     "browser-sync": "^2.9.11",
     "compression": "^1.6.0",
@@ -60,8 +61,8 @@
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.5",
     "imports-loader": "^0.6.5",
-    "lodash": "^3.10.1",
     "marked": "^0.3.5",
+    "object-assign": "^4.0.1",
     "open": "0.0.5",
     "require-dir": "^0.3.0",
     "vinyl-source-stream": "^1.1.0",

@@ -1,8 +1,8 @@
 var config = require('../config')
 if (!config.tasks.test) return
 
-var gulp         = require('gulp')
-  , path         = require('path')
+var path         = require('path')
+  , gulp         = require('gulp')
   , changed      = require('gulp-changed')
   , browserSync  = require('browser-sync')
   , handleErrors = require('../lib/handleErrors')

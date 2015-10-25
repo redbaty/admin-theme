@@ -1,11 +1,11 @@
 var config = require('../config')
 if (!config.tasks.js) return
 
-var webpackConfig = require('../lib/webpack-multi-config')
 var gulp          = require('gulp')
-var logger        = require('../lib/compileLogger')
-var webpack       = require('webpack')
-var browserSync   = require('browser-sync')
+  , webpack       = require('webpack')
+  , browserSync   = require('browser-sync')
+  , logger        = require('../lib/compileLogger')
+  , webpackConfig = require('../lib/webpack-multi-config')
 
 gulp.task('webpack:watch', function (callback) {
   var initialCompile = false

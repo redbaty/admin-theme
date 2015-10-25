@@ -1,9 +1,9 @@
-var config       = require('../config')
-var gulp         = require('gulp')
-var gulpSequence = require('gulp-sequence')
-var getEnabledTasks = require('../lib/getEnabledTasks')
+var config = require('../config')
 
-gulp.task('build:production', function (cb) {
-  var tasks = getEnabledTasks('production')
-  gulpSequence('clean', tasks.assetTasks, tasks.codeTasks, 'rev', cb)
-})
+var gulp            = require('gulp')
+  , flatten         = require('arr-flatten')
+  , getEnabledTasks = require('../lib/getEnabledTasks')
+
+var tasks = getEnabledTasks('production')
+
+gulp.task('build:production', flatten(['clean', tasks.assetTasks, tasks.codeTasks, 'rev']))

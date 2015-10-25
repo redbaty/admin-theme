@@ -1,8 +1,9 @@
 var config    = require('../../config')
-var gulp      = require('gulp')
+
 var path      = require('path')
-var rev       = require('gulp-rev')
-var revNapkin = require('gulp-rev-napkin');
+  , gulp      = require('gulp')
+  , rev       = require('gulp-rev')
+  , revNapkin = require('gulp-rev-napkin');
 
 // 1) Add md5 hashes to assets referenced by CSS and JS files
 gulp.task('rev-assets', function () {

@@ -5,7 +5,7 @@ module.exports = function (publicPath, dest, filename) {
   filename = filename || 'rev-manifest.json'
 
   return function () {
-    this.plugin("done", function (stats) {
+    this.plugin('done', function (stats) {
       var stats    = stats.toJson()
         , chunks   = stats.assetsByChunkName
         , manifest = {}

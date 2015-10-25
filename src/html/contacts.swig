@@ -9,10 +9,10 @@
   </div>
 
   <div id="dat-main" class="row">
-    <div id="data-nav" class="col-sm-5">
+    <div id="data-nav" class="col-sm-5 col-lg-4">
       {% include 'shared/table-contacts.swig' %}
     </div>
-    <div id="data-content" class="col-sm-7">
+    <div id="data-content" class="col-sm-7 col-lg-8">
       {% include 'shared/data-nav.swig' %}
     </div>
   </div>

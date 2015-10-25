@@ -1,9 +1,9 @@
-var config  = require('../config')
+var config = require('../config')
 
-var gulp    = require('gulp')
-  , os      = require('os')
+var os      = require('os')
   , del     = require('del')
   , path    = require('path')
+  , gulp    = require('gulp')
   , gutil   = require('gulp-util')
   , package = require('../../package.json')
 

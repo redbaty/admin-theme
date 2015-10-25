@@ -1,7 +1,7 @@
-var config  = require('../config')
+var config = require('../config')
 
-var gulp    = require('gulp')
-  , path    = require('path')
+var path    = require('path')
+  , gulp    = require('gulp')
   // , open    = require('open')
   , ghPages = require('gulp-gh-pages')
   , package = require('../../package.json')

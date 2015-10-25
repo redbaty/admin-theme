@@ -1,9 +1,9 @@
-var config    = require('../config')
+var config = require('../config')
 
-var gulp      = require('gulp')
-  , modernizr = require('gulp-modernizr')
+var path      = require('path')
+  , gulp      = require('gulp')
   , uglify    = require('gulp-uglify')
-  , path      = require('path')
+  , modernizr = require('gulp-modernizr')
 
 var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
 var paths = {

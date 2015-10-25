@@ -1,11 +1,12 @@
-var compress = require('compression')
-var config   = require('../config')
-// var express  = require('express')
-var gulp     = require('gulp')
-var gutil    = require('gulp-util')
-// var logger   = require('morgan')
-// var open     = require('open')
+var config = require('../config')
+
 var path     = require('path')
+  , gulp     = require('gulp')
+  , gutil    = require('gulp-util')
+  // , open     = require('open')
+  // , express  = require('express')
+  // , logger   = require('morgan')
+  , compress = require('compression')
 
 var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
 var settings = {

@@ -2,26 +2,26 @@
   <table class="table table-hover">
     <thead>
       <tr>
-        <th>#</th>
+        <th style="min-width: 1%">#</th>
         <th>Name</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th>
-          <img src="//placehold.it/100x100&text=User+Photo" alt="User Photo" class="img-fluid" width="60px">
+        <th style="width: 80px">
+          <img src="//placehold.it/100x100&text=User+Photo" alt="User Photo" class="img-fluid">
         </th>
         <td>Mark</td>
       </tr>
       <tr>
-        <th>
-          <img src="//placehold.it/100x100&text=User+Photo" alt="User Photo" class="img-fluid" width="60px">
+        <th style="width: 80px">
+          <img src="//placehold.it/100x100&text=User+Photo" alt="User Photo" class="img-fluid">
         </th>
         <td>Jacob</td>
       </tr>
       <tr>
-        <th>
-          <img src="//placehold.it/100x100&text=User+Photo" alt="User Photo" class="img-fluid" width="60px">
+        <th style="width: 80px">
+          <img src="//placehold.it/100x100&text=User+Photo" alt="User Photo" class="img-fluid">
         </th>
         <td>Larry the Bird</td>
       </tr>

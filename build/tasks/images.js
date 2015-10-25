@@ -1,11 +1,11 @@
-var config      = require('../config')
+var config = require('../config')
 if (!config.tasks.images) return
 
-var browserSync = require('browser-sync')
-var changed     = require('gulp-changed')
-var gulp        = require('gulp')
-var imagemin    = require('gulp-imagemin')
 var path        = require('path')
+  , gulp        = require('gulp')
+  , changed     = require('gulp-changed')
+  , imagemin    = require('gulp-imagemin')
+  , browserSync = require('browser-sync')
 
 var buildPath = process.env.NODE_ENV === 'production' ? config.root.dest : config.root.build
 var paths = {

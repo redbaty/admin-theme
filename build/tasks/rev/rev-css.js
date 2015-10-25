@@ -1,6 +1,7 @@
 var config    = require('../../config')
-var gulp      = require('gulp')
-  , path      = require('path')
+
+var path      = require('path')
+  , gulp      = require('gulp')
   , rev       = require('gulp-rev')
   , filter    = require('gulp-filter')
   , minify    = require('gulp-minify-css')
