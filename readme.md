@@ -1,4 +1,4 @@
-# Simple Admin Theme
+# Simple Admin Theme built on top of [TWBS v4-alpha](https://github.com/twbs/bootstrap/tree/v4-dev)
 
 This repo is fork from awesome [Gulp Starter](https://github.com/vigetlabs/gulp-starter) by [Viget Labs](https://github.com/vigetlabs) with some additional modifications.
 
