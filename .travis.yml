@@ -2,8 +2,10 @@ language: node_js
 env: TRAVIS_CI=true
 node_js:
   - 4.2
+cache:
+  - npm
 before_install:
-  - npm -g install bower
+  - npm -g update
 before_script:
   # http://docs.travis-ci.com/user/gui-and-headless-browsers/#Using-xvfb-to-Run-Tests-That-Require-GUI-(e.g.-a-Web-browser)
   - export DISPLAY=:99.0
@@ -12,3 +14,5 @@ after_script:
   - if [[ $AUTHOR_NAME != '' ]]; then git config --global user.name $AUTHOR_NAME; fi
   - if [[ $AUTHOR_EMAIL != '' ]]; then git config --global user.name $AUTHOR_EMAIL; fi
   - npm run deploy
+matrix:
+  fast_finish: true

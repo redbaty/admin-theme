@@ -21,10 +21,12 @@
     "production": "NODE_ENV=production gulp build:production",
     "development": "NODE_ENV=development gulp build:development",
     "gulp": "NODE_ENV=development gulp",
+    "bower": "bower",
     "test": "echo 'tested'"
   },
   "dependencies": {},
   "devDependencies": {
+    "bower": "^1.6.5",
     "browser-sync": "^2.9.11",
     "compression": "^1.6.0",
     "del": "^2.0.2",
