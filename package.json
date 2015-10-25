@@ -16,6 +16,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "postinstall": "bower install",
     "deploy": "NODE_ENV=production gulp deploy",
     "production": "NODE_ENV=production gulp build:production",
     "development": "NODE_ENV=development gulp build:development",

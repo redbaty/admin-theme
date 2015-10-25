@@ -20,7 +20,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "https://github.com/twbs/bootstrap/archive/v4-dev.zip",
+    "bootstrap": "twbs/bootstrap#v4-dev",
     "blueimp-file-upload": "~9.11.2",
     "bootstrap-datepicker": "~1.5.0",
     "font-awesome": "~4.4.0",
