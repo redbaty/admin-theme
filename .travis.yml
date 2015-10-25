@@ -11,8 +11,8 @@ before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
 after_script:
-  - if [[ $AUTHOR_NAME != '' ]]; then git config --global user.name $AUTHOR_NAME; fi
-  - if [[ $AUTHOR_EMAIL != '' ]]; then git config --global user.email $AUTHOR_EMAIL; fi
+  - if [ "${AUTHOR_NAME}" != '' ]; then git config --global user.name $AUTHOR_NAME; fi
+  - if [ "${AUTHOR_EMAIL}" != '' ]; then git config --global user.email $AUTHOR_EMAIL; fi
   - npm run deploy
 matrix:
   fast_finish: true
