@@ -1,4 +1,9 @@
 {
+  "fonts/fontawesome-webfont.eot": "fonts/fontawesome-webfont-45c7372386.eot",
+  "fonts/fontawesome-webfont.svg": "fonts/fontawesome-webfont-76a4f23c6b.svg",
+  "fonts/fontawesome-webfont.ttf": "fonts/fontawesome-webfont-7c87870ab4.ttf",
+  "fonts/fontawesome-webfont.woff": "fonts/fontawesome-webfont-dfb02f8f6d.woff",
+  "fonts/fontawesome-webfont.woff2": "fonts/fontawesome-webfont-4b5a84aaf1.woff2",
   "images/favicons/apple-touch-icon-precomposed.png": "images/favicons/apple-touch-icon-precomposed-03b46105f7.png",
   "images/favicons/favicon-16x16.png": "images/favicons/favicon-16x16-334deecf8a.png",
   "images/favicons/favicon-194x194.png": "images/favicons/favicon-194x194-576384cf59.png",
@@ -21,6 +26,6 @@
   "images/favicons/mstile-310x150.png": "images/favicons/mstile-310x150-70294a468d.png",
   "images/favicons/mstile-310x310.png": "images/favicons/mstile-310x310-9e8d23910d.png",
   "images/favicons/mstile-70x70.png": "images/favicons/mstile-70x70-38e763d87b.png",
-  "scripts/admin.js": "scripts/admin-1c6a9014476d466f4f48.js",
-  "scripts/vendors.js": "scripts/vendors-1c6a9014476d466f4f48.js"
+  "scripts/admin.js": "scripts/admin-ef2283160743d8337df6.js",
+  "scripts/vendors.js": "scripts/vendors-ef2283160743d8337df6.js"
 }
